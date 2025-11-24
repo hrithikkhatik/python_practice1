@@ -1,0 +1,16 @@
+print("="*3, "TEXT ANALYZER" ,"="*3)
+Sentence = input("Enter A Sentence: ")
+print(f"The first character of the sentence:{Sentence[0]}")
+print(f"The last character of the sentence:{Sentence[-1]}")
+print(f"The total length of the sentence:{len(Sentence)}")
+
+Word = input("Enter A Word: ")
+print(Word in Sentence)
+Word1 = input("Enter Word To Replace: ")
+Word2 = input("A word to replace it with: ")
+print(Sentence.replace(Word1,Word2))
+print(Sentence.strip())
+print(Sentence.upper())
+print(Sentence.lower())
+print("="*3 ,"THANK YOU FOR USING TEXT ANALYZER" ,"="*3)
+
