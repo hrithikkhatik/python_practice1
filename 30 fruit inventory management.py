@@ -1,13 +1,14 @@
-t1 = ("mango", "orange","apple")
-l1 = list(t1)
-l1.append("banana")
-l1.append("grapes")
-l1.remove("orange")
-t2 = tuple(l1)
-print(len(t2))
-print(t2)
-print(t2[0])
-print(t2[-1])
-
+fruits = ("mango", "orange", "apple")
+l = list(fruits)
+l.extend(["banana","grapes"])
+if "orange" in l:
+    l.remove("orange")
+else:
+    print("orange is not available")
+tup = tuple(l)
+print(f"The total number of fruits {len(tup)}")
+print(f"The final fruit collection:{tup}")
+print(f"The first fruit in the collection:{tup[0]}")
+print(f"The last fruit in the collection:{tup[-1]}")
 
 
