@@ -1,22 +1,33 @@
-student_details1 = (1001,"john")
-student_details2 = (78.5, 91.0, 83.5, 79.5)
-student_details = student_details1 + student_details2
-print(student_details)
-t1 = ("Class 5", 5000)
-print(t1 * 3)
-print(91.0 in student_details2)
-print(99.0 in student_details2)
+# Student basic details
+student_basic = (1001, "John")
 
-print(91.0 not in student_details2)
-print(99.0 not in student_details2)
+# Student marks in four subjects
+marks = (78.5, 91.0, 83.5, 79.5)
 
-t1 = (10, 4, 1, 9, 0, 3, 1)
-print(t1.count(t1))
+# Class and fee details
+class_fee = ("Class 5", 5000)
 
-print(t1.index(4))
-print(t1.index(10))
-print(t1.index(1))
+# Numerical tuple
+numbers = (10, 4, 1, 9, 0, 3, 1)
 
-print(min(t1))
-print(max(t1))
-print(sum(t1))
+student_record = student_basic + marks
+print(student_record)
+
+print(f"Repeat the class_fee tuple three times:{class_fee*3}")
+
+print(f"Check whether the following numbers are present in the marks{91.0}:{91.0 in marks}")
+print(f"Check whether the following numbers are present in the marks{99.0}:{99.0 in marks}")
+
+print(f"Check whether the following numbers are not present in the marks:{91.0}:{91.0 not in marks}")
+print(f"Check whether the following numbers are not present in the marks:{99.0}:{99.0 not in marks}")
+
+print(f"Count how many times the entire tuple appears inside itself:{numbers}:{numbers.count(numbers)}")
+print(f"index of {4}:{numbers.index(4)}")
+print(f"index of {4}:{numbers.index(4)}")
+print(f"first occurence of 1:{numbers.index(1)}")
+
+print(f"Minimum value:{min(numbers)}")
+print(f"maximum value:{max(numbers)}")
+print(f"Sum of all elements:{sum(numbers)}")
+
+
